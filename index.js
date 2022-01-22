@@ -27,8 +27,6 @@ console.log (`Vamos criar um incrivel avião de papel, pra isso, responde se voc
 		  conclusao++
 		  }
 
-      console.log (conclusao)
-
 		if (conclusao == 0) {
 		  console.log (`\nCara, isso é só uma folha de papel lisa, não parece em nada um avião kkkkk, isso nem voa, você falhou miseravelmente...`)
 		} 
