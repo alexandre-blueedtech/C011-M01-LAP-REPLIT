@@ -57,5 +57,6 @@ console.log (`\nlá ${nome}, você está numa competição de aviãozinhos de pa
 		} 
     
     if (conclusao == 5) {
-		  console.log (`\nAgora simmm!!! O seu avião voa como um pássaro, chegando a alcançar 15 metros de voo, se concagrando o grande campeão do Primeiro Torneio de Aviãozinhos de Papel, levando o grande troféu e o prêmio de 1000 reais e sendo celebrado por todos.`)
+		  console.log (`\nAgora simmm!!! O seu avião voa como um pássaro, chegando a alcançar 15 metros de voo, se concagrando o grande campeão do Primeiro Torneio de Aviãozinhos de Papel, levando o grande troféu e o prêmio de 1000 reais e sendo celebrado por todos.
+      RANKING: PRIMEIRO LUGAR`)
 		}
