@@ -4,7 +4,7 @@ console.log (`\nOlá ${nome}, você está numa competição de aviãozinhos de p
 		
 		let conclusao = 0
 		
-		var res1 = prompt (`\nVocê dobrou a folha de papel ao meio?[sim/não] `).toLowerCase()
+		let res1 = prompt (`\nVocê dobrou a folha de papel ao meio?[sim/não] `).toLowerCase()
     if (res1 == "sim") {
 		  conclusao++ 
 		  }
@@ -16,7 +16,7 @@ console.log (`\nOlá ${nome}, você está numa competição de aviãozinhos de p
 		    }
       }
 
-		var res2 = prompt (`\nVocê desdobrou a folha e depois dobrou as pontas superiores até a marca no centro?[sim/não] `).toLowerCase()
+		let res2 = prompt (`\nVocê desdobrou a folha e depois dobrou as pontas superiores até a marca no centro?[sim/não] `).toLowerCase()
     if (res2 == "sim") {
 		  conclusao++
 	    }
@@ -28,7 +28,7 @@ console.log (`\nOlá ${nome}, você está numa competição de aviãozinhos de p
 	        }
         }
 
-		var res3 = prompt (`\nVocê dobrou as pontas laterais até o centro?[sim/não] `).toLowerCase()
+		let res3 = prompt (`\nVocê dobrou as pontas laterais até o centro?[sim/não] `).toLowerCase()
 		if (res3 == "sim") {
 		  conclusao++
 		  }
@@ -40,7 +40,7 @@ console.log (`\nOlá ${nome}, você está numa competição de aviãozinhos de p
 	        }
         }
 
-		var res4 = prompt (`\nVocê dobrou o aviãozinho ao meio?[sim/não] `).toLowerCase()
+		let res4 = prompt (`\nVocê dobrou o aviãozinho ao meio?[sim/não] `).toLowerCase()
 		if (res4 == "sim") {
 		  conclusao++
 		  }
@@ -52,7 +52,7 @@ console.log (`\nOlá ${nome}, você está numa competição de aviãozinhos de p
 	        }
         }
 
-		var res5 = prompt (`\nVocê dobrou as asas do avião até a parte de baixo em cada lado e depois levantou novamente?[sim/não] `).toLowerCase()
+		let res5 = prompt (`\nVocê dobrou as asas do avião até a parte de baixo em cada lado e depois levantou novamente?[sim/não] `).toLowerCase()
 		if (res5 == "sim") {
 		  conclusao++
 		  }
