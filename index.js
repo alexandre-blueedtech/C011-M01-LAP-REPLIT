@@ -1,33 +1,68 @@
 const nome = prompt (`Diga seu nome: `)
 
-console.log (`\nlá ${nome}, você está numa competição de aviãozinhos de papel, onde será o campeão quem jogar o avião mais longe possível, cada pontuação vem com um ranking dela, vamos ver até onde seu ranking chegará e se você será o grande campeão. São seis posições possíveis no jogo, e quem ficar em último terá que pagar uma prenda, e o campeão levará o troféu e 1000 reais para casa. Vamos ver se você tem um incrivel avião de papel para ser campeão, pra isso, responda se você seguiu o passo a passo certinho.`)
+console.log (`\nOlá ${nome}, você está numa competição de aviãozinhos de papel, onde será o campeão quem jogar o avião mais longe possível, cada pontuação vem com um ranking dela, vamos ver até onde seu ranking chegará e se você será o grande campeão. São seis posições possíveis no jogo, e quem ficar em último terá que pagar uma prenda, e o campeão levará o troféu e 1000 reais para casa. Vamos ver se você tem um incrivel avião de papel para ser campeão, pra isso, responda se você seguiu o passo a passo certinho.`)
 		
 		let conclusao = 0
 		
-		const res1 = prompt (`\nVocê dobrou a folha de papel ao meio?[s/n] `).toLowerCase()
-		if (res1 == "s") {
-		  conclusao++
+		var res1 = prompt (`\nVocê dobrou a folha de papel ao meio?[sim/não] `).toLowerCase()
+    if (res1 == "sim") {
+		  conclusao++ 
 		  }
+		  while (res1 != `sim` && res1 != `não` && res1 != `nao`) {
+        console.log (`\nResposta incorreta, o programa não é capaz de ler sua resposta, por favor, digite sim ou não.`)
+        res1 = prompt (`\nVocê dobrou a folha de papel ao meio?[s/n] `).toLowerCase()
+      if (res1 == "sim") {
+		    conclusao++ 
+		    }
+      }
 
-		const res2 = prompt (`\nVocê desdobrou a folha e depois dobrou as pontas superiores até a marca no centro?[s/n] `).toLowerCase()
-		if (res2 == "s") {
+		var res2 = prompt (`\nVocê desdobrou a folha e depois dobrou as pontas superiores até a marca no centro?[sim/não] `).toLowerCase()
+    if (res2 == "sim") {
 		  conclusao++
 	    }
+      while (res2 != `sim` && res2 != `não` && res2 != `nao`) {
+        console.log (`\nResposta incorreta, o programa não é capaz de ler sua resposta, por favor, digite sim ou não.`)
+        res2 = prompt (`\nVocê desdobrou a folha e depois dobrou as pontas superiores até a marca no centro?[sim/não] `).toLowerCase()
+		    if (res2 == "sim") {
+		      conclusao++
+	        }
+        }
 
-		const res3 = prompt (`\nVocê dobrou as pontas laterais até o centro?[s/n] `).toLowerCase()
-		if (res3 == "s") {
+		var res3 = prompt (`\nVocê dobrou as pontas laterais até o centro?[sim/não] `).toLowerCase()
+		if (res3 == "sim") {
 		  conclusao++
 		  }
+      while (res3 != `sim` && res3 != `não` && res3 != `nao`) {
+        console.log (`\nResposta incorreta, o programa não é capaz de ler sua resposta, por favor, digite sim ou não.`)
+        res3 = prompt (`\nVocê dobrou as pontas laterais até o centro?[sim/não] `).toLowerCase()
+		    if (res3 == "sim") {
+		      conclusao++
+	        }
+        }
 
-		const res4 = prompt (`\nVocê dobrou o aviãozinho ao meio?[s/n] `).toLowerCase()
-		if (res4 == "s") {
+		var res4 = prompt (`\nVocê dobrou o aviãozinho ao meio?[sim/não] `).toLowerCase()
+		if (res4 == "sim") {
 		  conclusao++
 		  }
+      while (res4 != `sim` && res4 != `não` && res4 != `nao`) {
+        console.log (`\nResposta incorreta, o programa não é capaz de ler sua resposta, por favor, digite sim ou não.`)
+        res4 = prompt (`\nVocê dobrou o aviãozinho ao meio?[sim/não] `).toLowerCase()
+		    if (res3 == "sim") {
+		      conclusao++
+	        }
+        }
 
-		const res5 = prompt (`\nVocê dobrou as asas do avião até a parte de baixo em cada lado e depois levantou novamente?[s/n] `).toLowerCase()
-		if (res5 == "s") {
+		var res5 = prompt (`\nVocê dobrou as asas do avião até a parte de baixo em cada lado e depois levantou novamente?[sim/não] `).toLowerCase()
+		if (res5 == "sim") {
 		  conclusao++
 		  }
+      while (res5 != `sim` && res5 != `não` && res5 != `nao`) {
+        console.log (`\nResposta incorreta, o programa não é capaz de ler sua resposta, por favor, digite sim ou não.`)
+        res5 = prompt (`\nVocê dobrou as asas do avião até a parte de baixo em cada lado e depois levantou novamente?[sim/não] `).toLowerCase()
+		    if (res3 == "sim") {
+		      conclusao++
+	        }
+        }
 
     console.log (`\nAgora lance-o para ver onde pode chegar seu aviãozinho.`)
 
@@ -52,11 +87,11 @@ console.log (`\nlá ${nome}, você está numa competição de aviãozinhos de pa
 		} 
     
     if (conclusao == 4) {
-		  console.log (`\nAgora o avião voou bastante, chegando a 9 metros, mas não conseguiu desbancar os 12 metros do primeiro lugar, você quase conseguiu, como prêmio de consolação, leva pra casa 300 reais.
+		  console.log (`\nAgora o avião voou bastante, chegando a 9 metros, mas não conseguiu desbancar os 10 metros do primeiro lugar, você quase conseguiu, como prêmio de consolação, leva pra casa 300 reais.
       RANKING: SEGUNDO LUGAR`)
 		} 
     
     if (conclusao == 5) {
-		  console.log (`\nAgora simmm!!! O seu avião voa como um pássaro, chegando a alcançar 15 metros de voo, se concagrando o grande campeão do Primeiro Torneio de Aviãozinhos de Papel, levando o grande troféu e o prêmio de 1000 reais e sendo celebrado por todos.
+		  console.log (`\nAgora simmm!!! O seu avião voa como um pássaro, chegando a alcançar 12 metros de voo, se concagrando o grande campeão do Primeiro Torneio de Aviãozinhos de Papel, levando o grande troféu e o prêmio de 1000 reais e sendo celebrado por todos.
       RANKING: PRIMEIRO LUGAR`)
 		}
